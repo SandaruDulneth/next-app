@@ -8,7 +8,11 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write"
+    "format": "biome format --write",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:seed": "tsx scr/db/seed.ts"
+
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
