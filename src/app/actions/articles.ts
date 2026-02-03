@@ -5,7 +5,7 @@ import { redirect } from "next/navigation";
 import { authorizeUserToEditArticle } from "@/db/authz";
 import db from "@/db/index";
 import { articles } from "@/db/schema";
-//import { ensureUserExists } from "@/db/sync-user";
+import { ensureUserExists } from "@/db/sync-user";
 import { stackServerApp } from "@/stack/server";
 
 // Server actions for articles (stubs)
